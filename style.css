@@ -1,0 +1,130 @@
+.logo {
+    display: inline-block;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    max-width: 175px;
+    }
+    
+    .body {
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), url("pics/pexels-the-craft-wonder-421884.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    }
+    
+    .kutucuk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 1000px;
+    height: 420px;
+    margin-bottom: 70px;
+
+
+    }
+    
+    .kutucuk h2 {
+    color: black;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 45px;
+}
+
+    .kutucuk p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+    
+    /* Butonların ortalanması */
+    .butonlar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    /* Her butonun stili */
+    .buton {
+        background-color: #0077ff;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease-in-out;
+        margin: 10px;
+}
+    .buton:hover {
+        background-color: #0066cc;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        transform: translateY(-2px);
+    }
+
+    
+    /* Mavi yazıyı kaldır */
+    .buton a {
+    color: white;
+    text-decoration: none;
+    }
+    
+    .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* footer yüksekliğini burada ayarlayabilirsiniz */
+    background-color: white;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+        font-family: 'Lato', sans-serif;
+
+}
+    
+/* Ekran boyutu 600px ve altında ise */
+@media only screen and (max-width: 600px) {
+    /* Logo boyutunu küçült */
+    .logo img {
+    max-width: 100px;
+    }
+    /* Kutucuk boyutunu ayarla */
+    .kutucuk {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    }
+    /* Kutucuk içindeki yazıların font boyutunu ayarla */
+    .kutucuk h2 {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    }
+    .kutucuk p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    }
+    /* Butonların genişliğini ayarla */
+    .buton {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    margin: 5px 0;
+    }
+    /* Footer yüksekliğini ayarla */
+    .footer {
+    height: 40px;
+    }
+}
